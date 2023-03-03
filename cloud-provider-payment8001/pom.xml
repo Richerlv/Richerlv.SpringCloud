@@ -18,6 +18,31 @@
 
     <dependencies>
 
+        <!-- 服务注册中心的客户端 eureka-client -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka-server -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <!-- 排除Jersey，用SpringMVC Rest方式-->
+<!--            在引入spring-cloud-starter-netflix-eureka-client和spring-boot-starter-web两个依赖的时候，会出现冲突。-->
+<!--            由于代码里面，用了Spring MVC的Rest方式，-->
+<!--            而没有用spring-cloud-starter-netflix-eureka-client本身包含Jesery Rest方式-->
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sun.jersey</groupId>
+                    <artifactId>jersey-client</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey</groupId>
+                    <artifactId>jersey-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey.contribs</groupId>
+                    <artifactId>jersey-apache-client4</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
         <!-- 引入自己定义的api通用包 -->
         <dependency>
             <groupId>org.example</groupId>
@@ -63,13 +88,13 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
-<!--         https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools-->
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-devtools</artifactId>
-                    <scope>runtime</scope>
-                    <optional>true</optional>
-                </dependency>
+        <!--         https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
@@ -78,6 +103,7 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
         <dependency>
