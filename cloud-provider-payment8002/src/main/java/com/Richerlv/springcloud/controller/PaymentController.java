@@ -29,7 +29,7 @@ public class PaymentController {
         int result = paymentService.create(payment);
 //        log.info("插入结果:{}", result);
         if(result > 0) {
-            return new CommonResult<Integer>(200, "插入数据库成功: " + serverPort, result);
+            return new CommonResult<Integer>(200, "插入数据库成功:" + serverPort, result);
         } else {
             return new CommonResult<Integer>(444, "插入数据库失败");
         }
@@ -41,7 +41,7 @@ public class PaymentController {
         Payment result = paymentService.getPaymentById(id);
 //        log.info("查询结果:{}", result);
         if(result != null) {
-            return new CommonResult<Payment>(200, "查询成功: " + serverPort, result);
+            return new CommonResult<Payment>(200, "查询成功:" + serverPort, result);
         } else {
             return new CommonResult<Payment>(444, "没有相应记录, id = " + id, result);
         }
