@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89015f73-7e63-4d25-b50b-244e6ecfe832" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/Richerlv/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/Richerlv/springcloud/PaymentMain8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/Richerlv/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/Richerlv/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/Richerlv/springcloud/PaymentMain8002.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/Richerlv/springcloud/PaymentMain8002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/Richerlv/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/Richerlv/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/com/Richerlv/springcloud/PaymentMain8002.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/com/Richerlv/springcloud/PaymentMain8002.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +76,9 @@
       <recent name="D:\Project\Richerlv.SpringCloud\cloud-provider-payment8002\src\main\resources" />
       <recent name="D:\Project\Richerlv.SpringCloud\cloud-api-commons\src\main\java" />
       <recent name="D:\Project\Richerlv.SpringCloud\cloud-consumer-order80\src\main\java\com\Richerlv\springcloud\entities" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.Richerlv.springcloud.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -179,7 +187,7 @@
       <workItem from="1677830514786" duration="6091000" />
       <workItem from="1677855420099" duration="3148000" />
       <workItem from="1677861152999" duration="62000" />
-      <workItem from="1677896023626" duration="2299000" />
+      <workItem from="1677896023626" duration="3924000" />
     </task>
     <servers />
   </component>
